@@ -17,6 +17,7 @@ public class Destroy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //if animals or cookies go out of bounds they get destroyed.
         if (transform.position.z > topBound)
         {
             Destroy(gameObject);
@@ -24,6 +25,7 @@ public class Destroy : MonoBehaviour
 
         else if (transform.position.z < lowerBound)
         {
+            Debug.Log("Game over duduun");
             Destroy(gameObject);
         }
     }
