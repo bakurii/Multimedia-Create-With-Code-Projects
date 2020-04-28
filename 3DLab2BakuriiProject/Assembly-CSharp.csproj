@@ -56,6 +56,14 @@
      <Compile Include="Assets\Scripts\EnemyMovement.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\SpawnManager.cs" />
+     <None Include="Assets\Course Library\Fonts\Oswald\OFL.txt" />
+     <None Include="Assets\Course Library\_Source_Files\_LICENSE.txt" />
+     <None Include="Assets\Course Library\Fonts\Margarine\OFL.txt" />
+     <None Include="Assets\Course Library\Fonts\Exo_2\OFL.txt" />
+     <None Include="Assets\Course Library\Fonts\Baloo_Chettan\OFL.txt" />
+     <None Include="Assets\Course Library\_Source_Files\Materials\UnlitVertexColour_Alpha.shader" />
+     <None Include="Assets\Course Library\Fonts\Indie_Flower\OFL.txt" />
+     <None Include="Assets\Course Library\Fonts\Roboto\LICENSE.txt" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/Omistaja/Desktop/Multimedia Create With Code Projects/3DLab2BakuriiProject/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>

@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    public float speed = 10f;
-    public float speed2 = 30f;
+    public float speed = 150f;
 
-    public Rigidbody enemyRb;
-    public Rigidbody bossEnemyRb;
+    private Rigidbody enemyRb;
+    private Rigidbody bossEnemyRb;
+    private SpawnManager spawnManager;
+    public static bool asd;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +22,15 @@ public class EnemyMovement : MonoBehaviour
     void Update()
     {
         enemyRb.AddForce(Vector3.forward * -speed);
-        bossEnemyRb.AddForce(Vector3.forward * -speed2);
+        bossEnemyRb.AddForce(Vector3.forward * -speed);
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Powerup"))
+        {
+            Destroy(other.gameObject);
+            Debug.Log("ENEMY 1POINT");
+        }
     }
 }
